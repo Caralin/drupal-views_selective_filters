@@ -12,7 +12,7 @@ use Drupal\Core\Entity\ContentEntityTypeInterface;
 use Drupal\Core\Form\FormState;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\views\Plugin\views\display\DisplayPluginBase;
-use Drupal\views\Plugin\views\filter\InOperator;
+use Drupal\views\Plugin\views\filter\ManyToOne;
 use Drupal\views\ViewExecutable;
 use Drupal\views\Views;
 
@@ -23,7 +23,7 @@ use Drupal\views\Views;
  *
  * @ViewsFilter("views_selective_filters_filter")
  */
-class Selective extends InOperator {
+class Selective extends ManyToOne {
 
     /**
      * The original filter value options, if it's an options list handler.
